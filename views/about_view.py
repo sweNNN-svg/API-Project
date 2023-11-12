@@ -1,9 +1,8 @@
 from tkinter import *
 
-
-def about_view():
-    root = Tk()
-    root.title('Home')
-    root.geometry('500x500')
-
-    root.mainloop()
+def open_about_view():
+    aboutWindow = Tk()
+    aboutWindow.title('About')
+    aboutWindow.geometry('500x500')
+    Label(aboutWindow, text="This is an About Window").pack()
+    aboutWindow.mainloop()
